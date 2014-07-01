@@ -11,26 +11,62 @@ body{
 }
 .menu{
 	list-style:none;
-	height: 46px;
+	height: 45px;
 	overflow: hidden;
-	background: url(images/bg_menu.jpg) repeat-x;
+	background: #000 url(images/bg_menu.jpg) repeat-x;
+	z-index:100;	
 }
 .menu li{
 	display: inline-block;
 	float: right;
-	padding-top: 15px;
-	padding-right: 30px;
-}
+	padding-top: 17px;
+	padding-right: 20px;
+	padding-left: 20px;
+	}
 	
+.menu li ul {
+	padding: 0;
+	margin: 0;
+	position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-top: 10px; /* Сдвигаем подменю вверх */
+    background: #fff;
+    text-decoration: none;
+   }	
 .menu li a{
-	font: 12pt "arial";
+	display: block;
+	font: 12px arial;
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
 }
+
+.menu li ul li a{
+	    text-decoration: none;
+   }
+
+.menu  li:hover a,
+.menu  li:active a {color: #d5d5d5; text-decoration: underline;}
+.menu  li:hover,
+.menu  li:active {color: #000; background: url(images/bg_menu_a.jpg) repeat-x; height:45px;}
+
+.menu li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+ 
+
 .head{
 	background: #5f5f5f url(images/header.jpg) center no-repeat;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	height: 315px;
 }
+.head h2{
+	font: 30pt hevletiaca, arial ;
+	font-weight: bold;
+	color: #66a5bc;
+	text-decoration: none;
+	padding-right:50px;
+	float: right; 
+	/*text-shadow: -4px 3px 0px #fff, -9px 8px 0px black;*/
+   }
