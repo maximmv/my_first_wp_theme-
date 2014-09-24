@@ -13,8 +13,13 @@ body{
 	list-style:none;
 	height: 45px;
 	overflow: hidden;
+<<<<<<< HEAD
 	background: url(images/bg_menu.jpg) repeat-x;
 	z-index:100;
+=======
+	background: #000 url(images/bg_menu.jpg) repeat-x;
+	z-index:100;	
+>>>>>>> b2002c605978cd9124ba9c88cbb8a7416c3d1224
 }
 .menu li{
     display: inline-block;
@@ -22,6 +27,7 @@ body{
 	padding-top: 17px;
 	padding-right: 20px;
 	padding-left: 20px;
+<<<<<<< HEAD
 }
 .menu li a{
     display:block;
@@ -67,6 +73,40 @@ body{
 .menu  li ul li:hover a {color: #000;}
 
 .menu ul li:hover{background: none; background-color: #dbeeee; margin: 5px; height: auto;}
+=======
+	}
+	
+.menu li ul {
+	padding: 0;
+	margin: 0;
+	position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-top: 10px; /* Сдвигаем подменю вверх */
+    background: #fff;
+    text-decoration: none;
+   }	
+.menu li a{
+	display: block;
+	font: 12px arial;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li ul li a{
+	    text-decoration: none;
+   }
+
+.menu  li:hover a,
+.menu  li:active a {color: #d5d5d5; text-decoration: underline;}
+.menu  li:hover,
+.menu  li:active {color: #000; background: url(images/bg_menu_a.jpg) repeat-x; height:45px;}
+
+.menu li:hover ul { 
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+ 
+>>>>>>> b2002c605978cd9124ba9c88cbb8a7416c3d1224
 
 .head{
 	background: #5f5f5f url(images/header.jpg) center no-repeat;
@@ -75,6 +115,7 @@ body{
 	height: 315px;
 }
 .head h2{
+<<<<<<< HEAD
 	font: 30px hevletiaca, arial ;
 	color: #6793aa;
 	text-decoration: none;
@@ -90,4 +131,13 @@ body{
 	
 	float: right; 
 	
+=======
+	font: 30pt hevletiaca, arial ;
+	font-weight: bold;
+	color: #66a5bc;
+	text-decoration: none;
+	padding-right:50px;
+	float: right; 
+	/*text-shadow: -4px 3px 0px #fff, -9px 8px 0px black;*/
+>>>>>>> b2002c605978cd9124ba9c88cbb8a7416c3d1224
    }
