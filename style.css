@@ -125,27 +125,31 @@ body{
     }
    
    #footmenu { /* Ќижний блок */
-	height: 40px;
+   	height: 40px;
     background: #9eaeb7; /* ÷вет фона */
-	text-align: center;
-	/*padding: 25px; /* ѕол€ вокруг текста */
+	margin: 0 auto;
 	color: #fff; /* ÷вет текста */
 	border: 5px solid white;
     clear: both; /* ќтмен€ем обтекание */
+	overflow: hidden; /* пр€чем пункты, выход€щие за область обертки */
+	position: relative; /* относительное позиционирование */
 	}
-	#footmenu li{
+	#footmenu ul{
+	float: left; /* прижимаем меню к левому краю обертки */
+	position: relative; /* относительное позиционирование */
+	left: 50%; /* сдвигаем меню вправо */
+}
+	#footmenu ul li{
     display: inline-block;
 	padding-top: 12px;
-	/*float: right;*/
-	/*padding-top: 17px;*/
-	/*padding-right: 15px;*/
-	/*padding-left: 15px;*/
-}
+	float: left; /* выстраиваем пункты меню по горизонтали */
+	position: relative; /* относительное позиционирование */
+	right: 50%;
+	}
 	#footmenu li a{
-    /*display:block;*/
-    font: 12px arial;
-    color: #fff;
-    text-decoration: none;
+	font: 12px arial;
+	color: #fff;
+	text-decoration: none;
 }
 #footmenu ul li a{padding:0 15px 0;}
 #footmenu ul li a:hover{text-decoration:underline;}
