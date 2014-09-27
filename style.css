@@ -157,8 +157,53 @@ text-decoration: none;
 width: 565px;
 margin:0 0 0 310px; 
 padding-bottom: 20px;
+font:11px Tahoma;
 }
-   
+
+#blog  #photo {
+padding: 10px 10px 20px 0;
+float: left; 
+}
+
+#blog span {
+font:12px Tahoma;
+padding-left: 20px;
+display: block;
+}
+
+#blog h2{
+font:18px Tahoma;
+padding-top: 10px;
+padding-bottom:10px;
+}
+#blog a{
+color: black;
+}
+
+#blog a:hover,#blog a:active{
+color: #55697e;
+} 
+
+
+#blog #table{
+background-color: #eaeaea;
+border-collapse: collapse;
+font: 10px arial;
+margin-bottom: 10px;
+}
+#blog #table td, th {
+text-align: center;
+padding: 5px 10px;
+border: 1px solid;
+border-color: #888888;
+}
+
+#blog #table th {
+font-weight: normal;
+color: #566a7e;
+}
+
+
 #footmenu { 
 height: 40px;
 background: #9eaeb7; 
