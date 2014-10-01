@@ -41,8 +41,8 @@ body{
 	margin: 0;
 	position: absolute;
     display: none;
-    margin-top: 10px;
-    margin-left: -20px;
+    margin-top: 13px;
+    margin-left: -25px;
     background: #fff;
 
 }
@@ -50,9 +50,9 @@ body{
 	float: none;
 	display: block;
 	background-color: #fff;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin: 5px;
+	padding: 9px 8px 0 8px;
+	
+	margin: 2px;
 }
 .menu li ul li a{
     text-decoration: none;
@@ -68,7 +68,7 @@ body{
 .menu  li:hover ul a {color: #000;}
 .menu  li ul li:hover a {color: #000;}
 
-.menu ul li:hover{background: none; background-color: #dbeeee; margin: 5px; height: auto;}
+.menu ul li:hover{background: none; background-color: #dbeeee; margin: 2px; height: auto;}
 
 .head{
 	background: #5f5f5f url(images/header.jpg) center no-repeat;
@@ -93,6 +93,9 @@ body{
 	margin-top: 120px;
 	margin-left: 680px;
 	}
+	.head img{
+	float:left;
+		}
 .content{
 	background: white;
 	padding-top: 20px;
@@ -156,18 +159,19 @@ text-decoration: none;
 #blog { 
 width: 565px;
 margin:0 0 0 310px; 
-padding-bottom: 20px;
+padding-bottom: 10px;
 font:11px Tahoma;
 }
 
 #blog  #photo {
-padding: 10px 10px 20px 0;
+padding: 0 10px 10px 0;
 float: left; 
 }
 
 #blog span {
 font:12px Tahoma;
 padding-left: 20px;
+padding-bottom:10px;
 display: block;
 }
 
